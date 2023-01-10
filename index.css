@@ -1,0 +1,234 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    cursor: pointer;
+    color: #112D4E;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #F9F7F7;
+}
+
+#navbar{
+    display: flex;
+    position: sticky;
+    top: 0px;
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    height: 70px;
+    margin: auto;
+    background-color: #F9F7F7;
+    z-index: 1;
+}
+
+#input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+}
+
+#input>img{
+    width: 20px;
+    position: relative;
+    left: 30px;
+    opacity: 50%;
+}
+
+#container {
+    margin: auto;
+    width: 70%;
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+    padding: 20px 20px 20px 30px;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    background-color: white;
+}
+
+#submit {
+    display: block;
+    padding: 5px 10px;
+    margin-left: 10px;
+    font-size: 20px;
+    border: 0px;
+    border-radius: 10px;
+    background-color: #112D4E;
+    color: white;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+#submit:hover {
+    background-color: #112d4ede;
+    transition: 300ms;
+}
+
+input {
+    padding: 5px 5px 5px 40px ;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid #112D4E;
+    width: 300px;
+}
+
+input::placeholder{
+    opacity: 50%;
+}
+
+#temp>div>img{
+    width: 30px;
+    margin-right: 8px;
+}
+
+#temp>div{
+    display: flex;
+    margin-top: 10px;
+}
+
+#temp{
+    display: flex;
+    align-items: center;
+}
+
+#cityName {
+    margin: 0px;
+    margin-bottom: 0px;
+    margin-top: 13px;
+    color: #112D4E;
+}
+
+#type{
+    color: grey;
+}
+
+#weather{
+    font-size: 25px;
+}
+
+#other_temp{
+    margin-top: 15px;
+    display: flex;
+}
+
+.hr_temp{
+    margin: 0px 10px 0px 10px;
+}
+
+#wind{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+}
+
+#wind>img{
+    height: 14px;
+    margin-right: 10px;
+}
+
+#aqi{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#aqiIndex{
+    margin-left: 5px;
+}
+
+#viewDistance, #humidity{
+    margin-top: 15px;
+    display: flex;
+}
+
+#viewDistance>img,
+#humidity>img {
+    width: 17px;
+    margin-right: 10px;
+}
+
+.aqiName{
+    font-size: 12px;
+    border: 0px;
+    border-radius: 3px;
+    padding: 3px 6px;
+    color: white;
+}
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 150px;
+    width: 600px;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: 300ms;
+}
+
+.mapouter:hover{
+    /* transform: scale(1.03); */
+    transition: 300ms;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 150px;
+    width: 600px;
+}
+
+#right{
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.forecastContainer{
+    /* position: relative; */
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    height: 135px;
+    width: 600px;
+    border-radius: 30px;
+    margin-top: 20px;
+    overflow: hidden;
+    align-items: center;
+}
+
+.forecastContainer>div>img{
+    width: 35px;
+    margin: 7px 0px;
+}
+
+.forecastContainer>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid #112D4E;
+    height: 100%;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.forecastContainer>div:hover{
+    background-color: #F9F7F7;
+    transition: 200ms;
+}
+
+.forecastContainer>div:nth-child(1){
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.forecastContainer>div:nth-child(7) {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
